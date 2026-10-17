@@ -894,7 +894,7 @@ MonoBehaviour:
   color2: {r: 0, g: 0, b: 1, a: 1}
   color3: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   variable1: 9
-  nextLevel: Level2
+  nextLevel: YOU WIN!
 --- !u!50 &1633252053
 Rigidbody2D:
   serializedVersion: 4

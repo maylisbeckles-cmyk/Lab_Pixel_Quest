@@ -748,11 +748,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8395512069935619221, guid: f06488757f2844c4da0e031b1de5f909, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.159456
+      value: 9.59
       objectReference: {fileID: 0}
     - target: {fileID: 8395512069935619221, guid: f06488757f2844c4da0e031b1de5f909, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.9177372
+      value: -3.95
       objectReference: {fileID: 0}
     - target: {fileID: 8395512069935619221, guid: f06488757f2844c4da0e031b1de5f909, type: 3}
       propertyPath: m_LocalPosition.z
@@ -894,7 +894,7 @@ MonoBehaviour:
   color2: {r: 0, g: 0, b: 1, a: 1}
   color3: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   variable1: 9
-  nextLevel: Level2
+  nextLevel: Level3
 --- !u!50 &1633252053
 Rigidbody2D:
   serializedVersion: 4
