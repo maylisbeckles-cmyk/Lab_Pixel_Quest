@@ -4,10 +4,12 @@ using UnityEngine;
 public class HW2PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D _rigidbody2D;
+
     private float _xSpeed;
     private float _ySpeed;
 
     public float speed = 3;
+
     private string InputX = "Horizontal";
     private string InputY = "Vertical";
     private void Start()
