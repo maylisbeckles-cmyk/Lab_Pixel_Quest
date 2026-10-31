@@ -18,10 +18,13 @@ public class geo_controller : MonoBehaviour
     public int variable1 = 2;
     public string nextLevel = "Lvl_2";
     private SpriteRenderer spriteRenderer;
+    private SpriteRenderer _spriteRenderer;
     // Start is called before the first frame update
 
-    void Start()
+    private void Start()
     {
+        _spriteRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
+
         rb = GetComponent<Rigidbody2D>();
         GetComponent<Rigidbody2D>();
         Debug.Log(Var2 + "World");
@@ -34,10 +37,13 @@ public class geo_controller : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        float xInput = Input.GetAxis("Horizontal");
-        xInput *= variable1;
+        // Get player movemement from player button press
+        float xMovement = Input.GetAxis("Horizontal");
+        if (xMovement > 0) { _spriteRenderer.flipX = true; }
+                else if (xMovement < 0) { _spriteRenderer.flipX = false; }
+        xMovement *= variable1;
         rb.velocity = new Vector2(xInput, rb.velocity.y);
         //Debug.Log(xInput);
         if (Input.GetKeyDown(KeyCode.Alpha1)){
