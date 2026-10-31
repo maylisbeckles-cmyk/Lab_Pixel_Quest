@@ -44,7 +44,7 @@ public class geo_controller : MonoBehaviour
         if (xMovement > 0) { _spriteRenderer.flipX = true; }
                 else if (xMovement < 0) { _spriteRenderer.flipX = false; }
         xMovement *= variable1;
-        rb.velocity = new Vector2(xInput, rb.velocity.y);
+        rb.velocity = new Vector2(xMovement, rb.velocity.y);
         //Debug.Log(xInput);
         if (Input.GetKeyDown(KeyCode.Alpha1)){
             spriteRenderer.color = color1; }
